@@ -96,9 +96,6 @@ header{
     color: #525560;
 }
 
-.nav__bar ul li .nav__link.active{
-    color: black;
-}
 
 .nav__bar ul li .nav__btn button{
     font-size: 16px;
@@ -1120,20 +1117,22 @@ footer{
 }
 
 
-@media screen and (max-width: 576px){
-    /* BANNER */
+@media screen and (max-width: 576px){/* BANNER */
     .banner__header p{
         font-size: 6.5vw;
         line-height: 10vw;
     }
+
     .banner__footer p{
         font-size: 14px;
     }
+
     .banner__footer{
         width: 100%;
         display: inline-block;
         text-align: center;
     }
+
     .banner__footer .line {
         width: 85%;
     }
@@ -1154,6 +1153,7 @@ footer{
     .project__par{
         top: 30px;
     }
+
     .project__item{
         width: 70%;
         margin-left: auto;
@@ -1168,5 +1168,4 @@ footer{
     .project__title{
         padding-bottom: 20px;
     }
-    
-} 
+}
