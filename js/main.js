@@ -19,7 +19,6 @@ var doughnut = new Chart(ctx, {
                 'rgb(255, 240, 202)',
                 'rgb(249, 207, 100)',
                 'rgb(243, 143, 191)',
-
             ],
             
             borderColor: [
