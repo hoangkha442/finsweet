@@ -339,6 +339,11 @@ header{
     padding-top: 50px;
 }
 
+.journey__right img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .journey__coating{
     display: flex;
     width: 70%;
@@ -360,9 +365,6 @@ header{
 
 
 /**************************************** OUR TEAM *******************************************/
-.our{
-    padding: 80px 0;
-}
 
 .our__title{
     text-align: center;
@@ -385,6 +387,342 @@ header{
     color: #525560;
 }
 
+.our__content{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.our__item img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.our__overlay{
+    padding-top: 15px;
+    text-align: center;
+}
+.our__overlay p:first-child{
+    font-size:20px;
+    font-weight: 500;
+    color:#1D2130;
+    line-height:32px ;
+}
+
+.our__overlay p:last-child{
+    font-size:12px;
+    font-weight: 500;
+    color:#1D2130;
+    line-height:19.2px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.our__overlay i{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/***********************************CTA*****************************/
+.cta{
+    padding: 70px 0;
+}
+
+.cta__item{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cta__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgb(11, 7, 6, .5);
+    border-radius: 12px;
+}
+
+.cta__overlay .cta__text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cta__overlay .cta__text h2{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.cta__overlay .cta__btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cta__overlay .cta__btn button:first-child{
+    background-color: #70C174;
+    border: none;
+    margin-right: 20px;
+}
+.cta__overlay .cta__btn button:last-child{
+    font-weight: 500;
+    color: black;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/***********************************BLOG*****************************/
+.blog{
+    padding: 70px 0;
+}
+
+.blog__title p{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: normal;
+    color: #1D2130;
+    margin-right: 25px;
+    text-transform: none;
+}
+
+.blog__title .line{
+    width: 63vw;
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+.blog__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.blog__item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog__item p:first-child{
+    color: #1C1D28;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.blog__item p:last-child{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+/***********************************EVENTS*****************************/
+.events{
+    padding: 70px 0;
+}
+
+.events__title p{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: normal;
+    color: #1D2130;
+    margin-right: 25px;
+    text-transform: none;
+}
+
+.events__title .line{
+    width: 63vw;
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+.events__content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.events__item{
+    width: 49%;
+    background-color: #BEF3C0;
+    border-radius: 8px;
+}
+
+.events__text{
+    display: flex;
+    padding: 35px;
+}
+
+.events__text .title{
+    display: inline-block;
+    padding: 0;
+    display: flex;
+    margin-left: 18px;
+}
+
+.events__text .title h3{
+    display: block;
+}
+
+.events__date p:first-child{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57.6px;
+    color: #1D2130;
+}
+
+.events__date p:last-child{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 18.75px;
+    color: #1D2130;
+}
+
+.events__body{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 70%;
+}
+
+.events__body .line{
+    height: 2px;
+    color: #1D2130;
+    width: 4vw;
+    margin-left: 20px;
+}
+
+.events__body h3{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.events__button{
+    width: 20%;
+    text-align: center;
+    transform: translateY(25px);
+}
+
+.events__button button{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: white;
+    
+}
+
+.events__button button i{
+    color: black;
+    font-size: 18px;
+}
+
+/***********************************FOOTER*****************************/
+footer{
+    background-color: #0B0706;
+    padding: 70px 0;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    width: 20%;
+}
+
+.footer__logo P{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer__contact{
+    display: flex;
+    width: 45%;
+}
+
+.footer__contact li a{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.4px;
+}
+
+.footer__contact li{
+    margin-bottom: 20px;
+}
+
+.footer__contact li:first-child a{
+    color: white;
+    font-size: 1rem;
+    line-height: 25.6px;
+    font-weight: 700;
+}
+
+.footer__ourteam,
+.footer__more,
+.footer__connect{
+    width: 30%;
+}
+
+.footer__form{
+    width: 50%;
+}
+
+.footer__form p{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+    width: 80%;
+}
+
+.footer__form form{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.footer__form input{
+    flex: 1 1 auto;
+    background-color: black;
+    border: 1px solid #EBF0F94D;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    color: #EBF0F94D;
+}
+
+
+.footer__form button{
+    border: none;
+    color: black;
+    border-radius: 0 8px 8px 0;
+    background-color: white;
+}
+
+
 /**************************************** RESPONSIVE*******************************************/
 @media screen and (max-width: 1320px) {
     /* HEADER  */
@@ -393,6 +731,12 @@ header{
     }
     .container{
         padding: 0 50px; 
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text{
+        width: 70%;
+        text-align: center;
     }
 }
 
@@ -405,6 +749,73 @@ header{
         padding: 0 30px;
     }
 
+    /* ABOUT US CONTENT */
+    .aboutUs__content{
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .aboutUs__left {
+        width: 100%;
+    }
+    .aboutUs__text{
+        width: 90%;
+    }
+
+    .aboutUs__right{
+        width: 100%;
+        padding-left: 95px;
+        padding-top: 30px;
+    }
+    .abs__video {
+        top: 30%;
+    }
+
+    .ourMission__content{
+        padding-top: 0;
+    }
+
+
+    /* journey */
+    .journey__left,
+    .journey__right{
+        width: 50%;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text{
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    /* BLOG */
+    .blog__title {
+        display: block;
+    }
+    .blog__title .line{
+        width: 90vw;
+    }
+
+    /* EVENTS */
+    .events__title{
+        display: block;
+    }
+
+    .events__title .line{
+        width: 90vw;
+    }
+
+    .events__content{
+        display: block;
+    }
+
+    .events__item{
+        width: 100%;
+    }
+
+    .events__item:first-child{
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -454,4 +865,121 @@ header{
     .nav__bar.active ul{
         opacity: 1;
     }
+
+    /* ABU */
+    .aboutUs {
+        padding-bottom: 180px;
+    }
+    .abs__video {
+        top: 35%;
+    }
+
+
+    /* OUR */
+    .ourMission__logo{
+        display: block;
+    }
+
+    /* JOURNEY */
+    .journey__content{
+        display: block;
+    }
+    .journey__left,
+    .journey__right{
+        width: 100%;
+    }
+    .journey__right img {
+        border-radius: 8px;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text h2{
+        line-height: 5vw;
+        font-size: 4vw;
+
+    }
+
+    /* BLOG */
+    .blog{
+        padding: 20px 0 0;
+    }
+    .blog__content{
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .blog__item img{
+        object-fit: cover;
+    }
+
+    .blog__item p:first-child{
+        padding: 0 ;
+    }
+    
+    .blog__overlay{
+        padding-bottom: 30px;
+    }
+
+    .footer__content{
+        display: block;
+        /* width: 100%; */
+    }
+    .footer__contact {
+        justify-content: space-between;
+    }
+    .footer__logo, .footer__contact, .footer__form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* ABS */
+    .aboutUs {
+        padding-bottom: 150px;
+    }
+
+    /* OUR MISSTION */
+    .abs__video {
+        top: 40%;
+    }
+
+    .ourMission__content {
+        display: block;
+    }
+    .ourMission__text {
+        padding-left: 0;
+        width: 100%;
+    }
+    .ourMission__right{
+        margin-top: 40px;
+    }
+
+    /* AWARD */
+    .award__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    /* OUR */
+    .our__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* CTA */
+    .cta__btn{
+        display: flex;
+        justify-content: center;
+    }
+    .cta__overlay .cta__btn button{
+        font-size: 2vw;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
 }
