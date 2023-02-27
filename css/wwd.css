@@ -1,68 +1,4 @@
-/* GLOBAL */
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: 'Roboto', sans-serif;
-}
-
-p{
-    color: #525560;
-    line-height: 25.6px;
-    font-weight: 400;
-}
-
-.container{
-    padding: 0 110px;
-}
-
-.title{
-    display: flex;
-    align-items: center;
-    padding-bottom: 40px;
-}
-
-.title .line{
-    width: 70px;
-    height: 2px;
-    background-color: #1D2130;
-    margin-right: 25px;
-}
-
-.title p{
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 18.75px;
-    text-transform: uppercase;;
-    color: #1D2130;
-}
-
-.text{
-    width: 85%;
-    padding-left: 95px;
-}
-
-.text h2{
-    font-size: 48px;
-    line-height: 57.6px;
-    font-weight: 700px;
-}
-
-button {
-    font-size: 16px;
-    padding: 16px 32px;
-    background-color: black;
-    border-radius: 4px;
-    color: white;
-}
-
-/******************************* HEADER *****************************/
+/********************************************* nav **************************************** */
 header{
     width: 100%;
     height: 80px;
@@ -96,7 +32,6 @@ header{
     color: #525560;
 }
 
-
 .nav__bar ul li .nav__btn button{
     font-size: 16px;
     padding: 12px 32px;
@@ -105,206 +40,89 @@ header{
     color: white;
 }
 
+/********************************************* WHAT WE DO **************************************** */
 
-
-/******************************* BANNER *****************************/
-.banner{
-    background: url(../img/BG_Image.png) no-repeat;
-    background-size: cover;
-    height: 735px;
-    width: 100%;
-    position: relative;
-}
-
-.banner p{
-    color: white;
-}
-
-.banner__header p{
-    position: absolute;
-    width: 50%;
-    color: white;
-    top: 125px;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 76.8px;
-}
-
-.banner__body{
-    position: absolute;
-    top: 400px;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.banner__body a{
-    padding: 16px 32px;
-    background-color: white;
-    color: black;
-}
-
-.banner__body .banner__video{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 36px;
-}
-
-.banner__video i{
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    border-radius: 50%;
-    font-size: 10px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    margin-right: 8px;
-}
-
-
-.banner__footer{
-    position: absolute;
-    width: 90%;
-    color: white;
-    display: flex;
-    align-items: center;
-    top: 650px;
-}
-.banner__footer .line{
-    width: 62vw;
-    height: 1px;
-    background-color: #E5E5E5;
-    margin: 0 20px;
-}
-
-/* *********************************ABOUT US **************************************/
-.aboutUs{
-    padding: 70px 0;
-}
-.aboutUs__content{
-    display: flex;
-}
-
-.aboutUs__title{
-    display: flex;
-    align-items: center;
-    padding: 60px 0 50px;
-}
-
-.aboutUs__text h2{
-    margin-bottom: 40px;
-}
-
-.aboutUs__text p{
-    margin-bottom: 70px;
-}
-
-.aboutUs__text button{
-    background-color: #70C174;
-    border: none;
-    cursor: pointer;
-}
-
-.aboutUs__left{
-    width: 70%;
-}
-
-.aboutUs__right{
-    width: 40%;
-    height: 578.34px;
-    position: relative;
-}
-
-.aboutUs__right img{
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-.aboutUs__right .right__icon{
-    position: absolute;
-    width: 50%;
-    top: 45%;
-    left: 50%;
-}
-
-.right__icon i{
-    width: 64px;
-    height: 64px;
-    line-height: 64px;
-    align-items: center;
-    text-align: center;
-    border-radius: 100rem;
-    background-color: white;
-
-}
-
-.aboutUs__title .line__bottom{
-    width: 73vw;
-    height: 1px;
-    background-color: #E5E5E5;
-}
-
-.aboutUs__row p{
-    padding-right: 35px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18.75px;
-    letter-spacing: 2px;
-}
-
-.aboutUs__row .aboutUs__title{
-    padding-bottom: 35px;
-}
-
-.aboutUs__logo{
-    display: flex;
-    justify-content: space-between;
-}
-
-/*********************************** WHAT WE DO*****************************/
 .wwd{
-    background-color: #EFF7F2;
     padding: 70px 0;
 }
+
 .wwd__content{
     display: flex;
+
+}
+
+.wwd__right{
+    width: 40%;
+}
+
+.wwd__right img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .wwd__left{
     width: 70%;
 }
-.wwd__right{
-    padding-top: 70px;
-    width: 40%;
+
+.wwd__left h2{
+    width: 80%;
+    margin-bottom: 30px;
 }
 
-.wwd__right img{
-    object-fit: cover;
+.wwd__left p{
     width: 100%;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: #525560;
 }
-.wwd__text p:first-of-type{
-    padding-bottom: 25px;
-    padding-top: 20px;
+
+/********************************************* WWD ENVIRONMENT **************************************** */
+
+.environment{
+    padding: 90px 0 ;
+    background-color: #EFF7F2;
 }
 
-.wwd__item{
+.environment__title h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: #1D2130;
+}
+
+.environment__content{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.environment__item{
     display: flex;
 }
 
-.wwd__item:last-child  p:last-child{
-    padding: 0;
+.environment__item p:first-child {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    padding-bottom: 10px;
+    color: #1D2130;
 }
 
-.wwd__par p:first-child{
-    padding: 0;
+.environment__par{
+    margin-left: 20px;
 }
 
-.wwd__icon i{
+.environment__par p:last-child{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #1D2130;
+    width: 99%;
+}
+
+.environment__item i{
     font-size: 15px;
     width: 28px;
     height: 28px;
@@ -313,27 +131,6 @@ header{
     color: #DDFFDF;
     background-color: #83D187;
     text-align: center;
-}
-
-.wwd__overlay{
-    width: 80%;
-    padding-left: 20px;
-    border-left: 1px solid #E5E5E5;
-}
-
-.wwd__item p:first-child{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.13px;
-    padding-bottom: 10px;
-}
-
-.wwd__item p:last-child{
-    padding-bottom: 28px;
-}
-
-.wwd__item .wwd__par{
-    padding-left: 20px;
 }
 
 /*********************************** PROJECT*****************************/
@@ -410,106 +207,6 @@ header{
     border: none;
 }
 
-/*********************************** STATS*****************************/
-.stats{
-    background-color: #0B0706;
-    padding: 70px 0;
-}
-
-.stats__content{
-    display: flex;
-}
-
-.stats__title{
-    width: 60%;
-}
-
-.stats__title h2{
-    width: 80%;
-}
-
-.stats__chart{
-    width: 40%;
-}
-
-.stats__title{
-    padding: 30px 0;
-}
-
-.stats__title h2{
-    color: white;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    margin-bottom: 20px;
-}
-
-.stats__title .title-text{
-    color: #FFFFFF;
-    opacity: .5;
-    margin-bottom: 20px;
-}
-
-
-.stats__top,
-.stats__bottom{
-    display: flex;
-    align-items: center;
-}
-
-.stats__item{
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-}
-
-.stats__item p{
-    color: white;
-    font-weight: 500;
-    line-height: 25.6px;
-}
-
-.stats__item .square{
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-    margin-right: 10px;
-}
-.stats__top .stats__item:first-child .square{
-    background-color: rgb(190, 243, 192);
-}
-.stats__top .stats__item:nth-child(2) .square{
-    background-color: rgb(172, 148, 241);
-}
-.stats__top .stats__item:last-child .square{
-    background-color: rgb(255, 240, 202);
-}
-.stats__bottom .stats__item:first-child .square{
-    background-color: rgb(249, 207, 100);
-}
-.stats__bottom .stats__item:last-child .square{
-    background-color: rgb(243, 143, 191);
-}
-
-
-#doughnut{
-    position: relative;
-}
-
-.chart{
-    margin-left: 100px;
-    position: relative;
-}
-
-.chart p{
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 
 /***********************************CTA*****************************/
 .cta{
@@ -807,9 +504,8 @@ footer{
     background-color: white;
 }
 
+/********************************************* RESPONSVIVE **************************************** */
 
-
-/**************************************** RESPONSIVE*******************************************/
 @media screen and (max-width: 1320px) {
     /* HEADER  */
     header{
@@ -817,14 +513,6 @@ footer{
     }
     .container{
         padding: 0 50px; 
-    }
-
-    /* BANNER */
-    .banner__header p{
-        width: 65%;
-    }
-    .banner__footer .line {
-        width: 56vw;
     }
 
     /* CTA */
@@ -835,12 +523,6 @@ footer{
 }
 
 @media screen and (max-width: 1200px){
-    /* ABOUT US */
-    .aboutUs__right .right__icon {
-        top: 35%;
-        left: 45%;
-    }
-
     /* PROJECT */
     .project__content{
         display: block;
@@ -853,22 +535,6 @@ footer{
     .project__text{
         width: 90%;
     }
-
-    /* STATS */
-    .stats__content{
-        display: block;
-    }
-    .stats__title{
-        width: 100%;
-    }
-    .stats__title h2{
-        width: 100%;
-    }
-    .stats__chart {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -879,34 +545,10 @@ footer{
     .container{
         padding: 0 30px;
     }
-    /* BANNER */
-    .banner__header p{
-        font-size: 6vw;
-    }
-    .banner__footer .line {
-        width: 49vw;
-    }
 
-    /* ABOUT US */
-    .title__abs{
-        display: block;
-    }
-    .title__abs.line__bottom{
-        width: 90vw;
-    }
-    
-    
-    /* WHAT WE DO */
-    .wwd__content{
-        display: block;
-    }
-    .wwd__left{
+    /* WWD */
+    .wwd__left h2 {
         width: 100%;
-    }
-    .wwd__right{
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%
     }
 
     /* PROJECT */
@@ -923,12 +565,12 @@ footer{
         left: 50%;
         transform: translate(-50%,-50%);
     }
-
+    
     /* BLOG */
     .blog__title {
         display: block;
     }
-    .blog__title .line{
+    .blog__title .line {
         width: 90vw;
     }
 
@@ -952,6 +594,7 @@ footer{
     .events__item:first-child{
         margin-bottom: 20px;
     }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -1001,36 +644,26 @@ footer{
         opacity: 1;
     }
 
-    /* BANNER */
-    .banner__footer p{
-        font-size: 1.5vw;
-    }
-
-    /* ABOUT US */
-    .aboutUs__content{
+    /* WWD */
+    .wwd__content {
         display: block;
     }
-    .aboutUs__left{
+
+    .wwd__left {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .wwd__text{
+        width: 90%;
+    }
+
+    .wwd__right {
         width: 100%;
     }
-    .aboutUs__text p {
-        margin-bottom: 40px;
-    }
-    .aboutUs__text{
-        padding-bottom: 30px;
-    }
-    .aboutUs__right{
-        width: 60%;
-        margin: auto;
-    }
-    .aboutUs__right .right__icon{
-        top: 50%;
-        left: 50%;
-    }
 
-    /* ABOUT US */
-    .aboutUs__logo {
-        display: block;
+    /* ENVIRONMENT */
+    .environment__content{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* PROJECT */
@@ -1066,30 +699,17 @@ footer{
     }
 
     /* FOOTER */
-    .footer__content{
+    .footer__content {
         display: block;
         /* width: 100%; */
     }
-    .footer__logo,
-    .footer__contact,
-    .footer__form{
-        width: 100%;
-    }
-
-    .footer__logo p{
+    .footer__logo p {
         padding-bottom: 25px;
     }
-
-    .footer__contact{
-        justify-content: space-between;
-    }
-
-    .footer__form p{
+    .footer__logo, .footer__contact, .footer__form {
         width: 100%;
     }
-    .footer__form form{
-        margin-top: 10px;
-    }
+}
 
 @media screen and (max-width: 768px){
     /* PROJECT */
@@ -1098,11 +718,6 @@ footer{
     }
     .project__text h2{
         line-height: 6vw;
-    }
-
-    /* STATS */
-    .stats__top, .stats__bottom{
-        display: block;
     }
 
     /* CTA */
@@ -1116,40 +731,7 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 576px){
-    /* BANNER */
-    .banner__header p{
-        font-size: 6.5vw;
-        line-height: 10vw;
-    }
-
-    .banner__footer p{
-        font-size: 14px;
-    }
-
-    .banner__footer{
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .banner__footer .line {
-        width: 85%;
-    }
-
-    /* ABOUT US */
-    .aboutUs__right{
-        width: 99%;
-        margin: auto;
-    }
-
-    /* ABOUT US */
-    .aboutUs__right .right__icon{
-        top: 50%;
-        left: 50%;
-    }
-
     /* PROJECT */
     .project__par{
         top: 30px;
@@ -1169,5 +751,14 @@ footer{
     .project__title{
         padding-bottom: 20px;
     }
+
+    .environment__content{
+        grid-template-columns: 1fr;
+    }
 }
+
+@media screen and (max-width: 350px){
+    .project__button button{
+        display: none;
+    }
 }
