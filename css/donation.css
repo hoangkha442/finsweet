@@ -1,0 +1,403 @@
+/********************************************* nav **************************************** */
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-color: #EFF7F2;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.humburger{
+    display: none;
+}
+
+.nav__bar ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav__bar ul li .nav__link{
+    display: block;
+    color: black;
+    font-size: 16px;
+    padding: 10px 25px;
+    transition: all .5s;
+    font-weight: 500;
+    color: #525560;
+}
+
+.nav__bar ul li .nav__btn button{
+    font-size: 16px;
+    padding: 12px 32px;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+}
+
+/********************************************* WHAT WE DO **************************************** */
+
+.donate{
+    padding: 70px 0;
+    background-color: #EFF7F2;
+}
+
+.donate__content{
+    display: flex;
+
+}
+
+.donate__right{
+    width: 40%;
+}
+
+.donate__right img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.donate__left{
+    width: 70%;
+}
+
+.donate__left h2{
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.donate__left p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    color: #525560;
+}
+
+.donate__left button{
+    background-color: #70C174;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+
+/***********************************CTA*****************************/
+.cta{
+    padding: 70px 0;
+}
+
+.cta__item{
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cta__item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgb(11, 7, 6, .5);
+    border-radius: 12px;
+}
+
+.cta__overlay .cta__text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cta__overlay .cta__text h2{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.cta__overlay .cta__btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cta__overlay .cta__btn button:first-child{
+    background-color: #70C174;
+    border: none;
+    margin-right: 20px;
+}
+.cta__overlay .cta__btn button:last-child{
+    font-weight: 500;
+    color: black;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/***********************************FOOTER*****************************/
+footer{
+    background-color: #0B0706;
+    padding: 70px 0;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    width: 20%;
+}
+
+.footer__logo P{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer__contact{
+    display: flex;
+    width: 45%;
+}
+
+.footer__contact li a{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.4px;
+}
+
+.footer__contact li{
+    margin-bottom: 20px;
+}
+
+.footer__contact li:first-child a{
+    color: white;
+    font-size: 1rem;
+    line-height: 25.6px;
+    font-weight: 700;
+}
+
+.footer__ourteam,
+.footer__more,
+.footer__connect{
+    width: 30%;
+}
+
+.footer__form{
+    width: 50%;
+}
+
+.footer__form p{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+    width: 80%;
+}
+
+.footer__form form{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.footer__form input{
+    flex: 1 1 auto;
+    background-color: black;
+    border: 1px solid #EBF0F94D;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    color: #EBF0F94D;
+}
+
+
+.footer__form button{
+    border: none;
+    color: black;
+    border-radius: 0 8px 8px 0;
+    background-color: white;
+}
+
+/********************************************* RESPONSVIVE **************************************** */
+
+@media screen and (max-width: 1320px) {
+    /* HEADER  */
+    header{
+        padding: 0 50px; 
+    }
+    .container{
+        padding: 0 50px; 
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text{
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 1100px) {
+    /* HEADER  */
+    header{
+        padding: 0 30px;
+    }
+    .container{
+        padding: 0 30px;
+    }
+
+    /* donate */
+    .donate__left h2 {
+        width: 100%;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text h2{
+        font-size: 5vw;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text{
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    /* BLOG */
+    .blog__title {
+        display: block;
+    }
+    .blog__title .line {
+        width: 90vw;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    /* HEADER  */
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+        background-color: rgb(0, 0, 0);
+    }
+    .nav__bar{
+        position: absolute;
+        z-index: 1;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background: rgba(0, 0, 0, .9);
+        transition: .2s;
+        overflow: hidden;
+    }
+    .nav__bar.active{
+        height: 735px;
+    }
+    .nav__bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0;
+        text-align: center;
+        transition: all .5s;
+        opacity: 0d;
+    }
+    .nav__bar ul li .nav__link{
+        color: white;
+        margin-bottom: 10px;
+    }
+    .nav__bar ul li .nav__btn button{
+        background-color: white;
+        color: black    ;
+    }
+    .nav__bar.active ul{
+        opacity: 1;
+    }
+
+    /* donate */
+    .donate__content {
+        display: block;
+    }
+
+    .donate__left {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .donate__text{
+        width: 90%;
+    }
+
+    .donate__right {
+        width: 100%;
+    }
+
+    .donate__text{
+        padding: 0;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text h2{
+        line-height: 5vw;
+    }
+
+
+
+    /* FOOTER */
+    .footer__content {
+        display: block;
+        /* width: 100%; */
+    }
+    .footer__logo p {
+        padding-bottom: 25px;
+    }
+    .footer__logo, .footer__contact, .footer__form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    /* CTA */
+    .cta__btn{
+        display: flex;
+        justify-content: center;
+    }
+    .cta__overlay .cta__btn button{
+        font-size: 2vw;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    /* DONATE */
+    .donate__left{
+        width: 100%;
+    }
+}
+
