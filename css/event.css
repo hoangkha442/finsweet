@@ -6,6 +6,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
+    background-color: #EFF7F2;
 }
 
 .logo{
@@ -40,67 +41,182 @@ header{
     color: white;
 }
 
-/********************************************* WHAT WE DO **************************************** */
+/***********************************BANNR*****************************/
+.banner{
+    padding: 90px 0;
+    background-color: #EFF7F2;
+}
+.banner__text{
+    margin-left: 270px;
+    padding: 0;
+}
 
-.blogRm{
+.banner__text h2{
+    width: 70%;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+}
+
+.banner__content{
+    display: flex;
+    margin-left: 250px;
+}
+.banner__item{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.banner__item p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+}
+
+.banner__item i{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    color: #70C174;
+    font-size: 18px;
+}
+
+/***********************************About*****************************/
+.about{
+    padding: 90px 0;
+}
+
+.about__content{
+    padding-left: 270px;
+    padding-right: 270px;
+}
+
+.about__content h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.about__content p{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.about__content img{
+    margin-top: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/***********************************EVENTS*****************************/
+.events{
     padding: 70px 0;
 }
 
-.blogRm__header{
+.events__overlay{
+    padding: 0 270px;
+}
+
+.events__title p{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: normal;
+    color: #1D2130;
+    margin-right: 55px;
+    text-transform: none;
+}
+
+.events__title .line{
+    width: 30vw;
+    height: 1px;
+    background-color: #E5E5E5;
+}
+
+.events__item{
+    width: 100%;
+    background-color: #BEF3C0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.events__text{
+    display: flex;
+    padding: 35px;
+}
+
+.events__text .title{
+    display: inline-block;
     padding: 0;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    display: flex;
+    margin-left: 18px;
 }
 
-.blogRm__text p{
+.events__text .title h3{
+    display: block;
+}
+
+.events__date p:first-child{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57.6px;
+    color: #1D2130;
+}
+
+.events__date p:last-child{
     font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-top: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 18.75px;
+    color: #1D2130;
 }
 
-.blogRm__header p:last-child{
-    margin-top: 25px;
-    margin-bottom: 30px;
+.events__body{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 70%;
 }
 
-.blogRm__header p:first-child{
-    margin-bottom: 35px;
+.events__body .line{
+    height: 2px;
+    color: #1D2130;
+    width: 4vw;
+    margin-left: 20px;
 }
 
-.blogRm__text h3{
+.events__body h3{
     font-size: 28px;
     font-weight: 700;
     line-height: 42px;
-    color: #1D2130;
-    margin-top: 30px;
+    padding-left: 15px;
 }
 
-.blogRm__text h2{
-    margin-top: 50px;
+.events__button{
+    width: 20%;
+    text-align: center;
+    transform: translateY(25px);
 }
 
-.blogRm__text ul{
-    margin: 30px 0;
+.events__button button{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: white;
+    
 }
 
-.blogRm__text li{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    color: #525560;
-    list-style: inside ;
-}
-
-
-.blogRm__content img{
-    width: 100%;
-    height: 384px;
-    object-fit: cover;
-    margin-top: 30px;
-    border-radius: 8px;
+.events__button button i{
+    color: black;
+    font-size: 18px;
 }
 
 /***********************************FOOTER*****************************/
@@ -199,6 +315,19 @@ footer{
     .container{
         padding: 0 50px; 
     }
+
+    .events__title{
+        display: block;
+    }
+
+    .events__title .line{
+        width: 25vw;
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -210,16 +339,32 @@ footer{
         padding: 0 30px;
     }
 
-    /* BLOG RM */
-    .urProject__text h2 {
+    /* BANNER */
+    .banner__text {
+        margin-left: 200px;
+        padding: 0;
+    }
+    .banner__content {
+        margin-left: 180px;
+    }
+
+    .about__content {
+        padding: 0 200px;
+    }
+
+    /* EVENTS */
+    .events__overlay {
+        padding: 0 200px;
+    }
+
+    .events__item{
         width: 100%;
     }
 
-    /* FEATURE */
-    .feature__content{
-        grid-template-columns: repeat(1 ,1fr);
-        gap: 30px;
+    .events__item:first-child{
+        margin-bottom: 20px;
     }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -269,6 +414,27 @@ footer{
         opacity: 1;
     }
 
+    /* BANNER */
+    .banner__text {
+        margin-left: 100px;
+        padding: 0;
+    }
+    .banner__content {
+        margin-left: 80px;
+    }
+
+    .about__content {
+        padding: 0 100px;
+    }
+    .banner__text h2 {
+        width: 100%;
+    }
+
+    /* EVENTS */
+    .events__overlay {
+        padding: 0 100px;
+    }
+
     /* FOOTER */
     .footer__content {
         display: block;
@@ -283,25 +449,33 @@ footer{
 }
 
 @media screen and (max-width: 768px){
-    /* BLOG RM */
-    .urProject__content {
-        padding-left: 0;
-    }
-
-    /* BLOG RM */
-    .blogRm__header{
+    /* TOP NEW */
+    .topNew__text{
         width: 100%;
+    }
+    .topNew__left h2{
+        font-size: 10vw;
+        line-height: 10vw;
     }
 }
 
-@media screen and (max-width: 576px){
-    /* BLOG RM */
-    .blogRm__text{
-        width: 100%;
+@media screen and (max-width: 578px){
+    /* BANNER */
+    .banner__text {
+        margin-left: 0px;
         padding: 0;
     }
-    .blogRm__text h2 {
-        font-size: 9vw;
-        line-height: 9vw;
+    .banner__content {
+        margin-left: 0px;
     }
+
+    .about__content {
+        padding: 0 0px;
+    }
+    /* EVENTS */
+    .events__overlay {
+        padding: 0 10px;
+    }
+    
 }
+
