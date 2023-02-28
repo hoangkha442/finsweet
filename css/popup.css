@@ -1,0 +1,130 @@
+.highlight{
+    display: none;
+}
+
+#myParagraph{
+    padding-top: 70px;
+    height: 200%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+}
+
+#myParagraph  .button{
+    text-align: right;
+}
+
+#myParagraph button{
+    padding: 2px 4px;
+}
+
+
+.card{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.card__header{
+    margin-bottom: 25px;
+}
+
+.card__header .icon{
+    text-align: right;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card__header h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 15px;
+
+}
+
+.card__header i{
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 8%;
+    color: white;
+    background-color: black;
+}
+
+.form__group:first-child,
+.form__group:nth-child(2){
+    display: flex;
+}
+.form__group label{
+    width: 100%;
+}
+
+.form__group label p{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #7f8083;
+
+}
+
+.form__group:first-child label:first-child,
+.form__group:nth-child(2) label:first-child{
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.form__group input{
+    width: 95%;
+    padding: 5px 10px 5px 0;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1D2130;
+}
+
+.form__group:nth-child(2){
+    margin-top: 20px;
+}
+
+.form__group textarea{
+    border-radius: 8px;
+    padding: 25px;
+    resize: none;
+    width: 100%;
+}
+
+.card__footer{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.card__footer button{
+    background-color: #70C174;
+    border: none;
+    padding: 16px 32px !important;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .card{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card{
+        width: 100%;
+    }
+    .container{
+        padding: 0 30px;
+    }
+}

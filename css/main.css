@@ -1141,13 +1141,19 @@ footer{
     /* ABOUT US */
     .aboutUs__right{
         width: 99%;
-        margin: auto;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 
-    /* ABOUT US */
     .aboutUs__right .right__icon{
         top: 50%;
         left: 50%;
+    }
+
+    /* WWD */
+    .text{
+        padding: 0;
+        width: 100%;
     }
 
     /* PROJECT */

@@ -138,9 +138,23 @@ header{
     padding: 70px 0;
 }
 
+.project__title{
+    display: block;
+    padding-bottom: 30px;
+}
+.project__title p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .project__text{
-    width: 65%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .project__content{
@@ -712,6 +726,10 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    .text{
+        padding-left: 0;
+        width: 100%;
+    }
     /* PROJECT */
     .project__par p{
         display: none;

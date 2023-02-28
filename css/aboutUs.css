@@ -938,6 +938,12 @@ footer{
     .aboutUs {
         padding-bottom: 150px;
     }
+    .text{
+        padding-left: 0;
+    }
+    .aboutUs__right {
+        padding-left: 0;
+    }
 
     /* OUR MISSTION */
     .abs__video {
@@ -978,8 +984,15 @@ footer{
         font-size: 2vw;
         padding: 8px 16px;
     }
+
+    /* JOURNEY */
+    .journey__left{
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 576px){
-
+    .our__title p {
+        width: 100%;
+    }
 }
