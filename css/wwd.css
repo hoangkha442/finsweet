@@ -138,32 +138,20 @@ header{
     padding: 70px 0;
 }
 
-.project__title{
-    display: block;
-    padding-bottom: 30px;
-}
-.project__title p{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .project__text{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 65%;
     padding-bottom: 50px;
-    text-align: center;
 }
 
 .project__content{
-    display: flex;
-    grid-template-columns: repeat(3, fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .project__item{
+    width: 100%;
+    height: 100%;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -219,6 +207,13 @@ header{
     color: black;
     background-color: white;
     border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.project__button button:hover{
+    color: white;
+    background-color: black;
 }
 
 
@@ -280,6 +275,11 @@ header{
     color: black;
     background-color: #FFFFFF;
     border: none;
+}
+
+.cta__overlay .cta__btn button:last-child:hover{
+    color: black;
+    background-color: #FFFFFF;
 }
 
 /***********************************BLOG*****************************/
@@ -536,10 +536,11 @@ footer{
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px){  
+
     /* PROJECT */
     .project__content{
-        display: block;
+        grid-template-columns: repeat(1, 1fr);
     }
     .project__item {
         width: 50%;
@@ -566,9 +567,6 @@ footer{
     }
 
     /* PROJECT */
-    .project__text{
-        width: 90%;
-    }
     .cta__overlay .cta__text h2{
         font-size: 5vw;
     }
@@ -588,8 +586,8 @@ footer{
         width: 90vw;
     }
 
-    /* EVENTS */
-    .events__title{
+     /* EVENTS */
+     .events__title{
         display: block;
     }
 
@@ -664,8 +662,12 @@ footer{
     }
 
     .wwd__left {
-        width: 90%;
+        width: 100%;
         margin-bottom: 20px;
+        
+    }
+    .wwd__left h2{
+        margin-bottom: 10px;
     }
     .wwd__text{
         width: 90%;
@@ -673,6 +675,7 @@ footer{
 
     .wwd__right {
         width: 100%;
+        padding-top: 0;
     }
 
     /* ENVIRONMENT */
@@ -726,16 +729,32 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    /* WWD */
+    .wwd__left h2{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
     .text{
         padding-left: 0;
         width: 100%;
     }
     /* PROJECT */
-    .project__par p{
-        display: none;
+    .project__item{
+        width: 80%;
+    }
+    .project__par h3{
+        font-size: 7vw;
+        line-height: 7vw;
     }
     .project__text h2{
         line-height: 6vw;
+    }
+
+    /* ENVIRONMENT */
+    .environment__title h2{
+        text-align: center;
+        font-size: 7vw;
+        line-height: 7vw;
     }
 
     /* CTA */
@@ -747,16 +766,15 @@ footer{
         font-size: 2vw;
         padding: 8px 16px;
     }
+    .footer__form p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px){
     /* PROJECT */
-    .project__par{
-        top: 30px;
-    }
-
     .project__item{
-        width: 70%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -769,14 +787,98 @@ footer{
     .project__title{
         padding-bottom: 20px;
     }
+    .project__title{
+        padding-bottom: 20px;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text h2 {
+        font-size: 4vw;
+    }
+    .cta__overlay .cta__btn button {
+        font-size: 2vw;
+        padding: 4px 8px;
+    }
 
     .environment__content{
         grid-template-columns: 1fr;
     }
+
+    /* Blog */
+    .blog__title p{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    /* EVENT */
+    .events__title p{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    /* EVENT */
+    .events__date p:first-child{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .events__date p:last-child {
+        font-size: 3vw;
+    }
+    .events__body .line{
+        width: 10vw;
+    }
+    .events__body h3{
+        font-size: 4.5vw;
+        line-height: 4.5vw;
+    }
+    .events__body .title p{
+        font-size: 2vw;
+    }
+    .events__text {
+        padding: 15px;
+    }
+
+    .events__button button {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* FOOTER */
+    .footer__form p{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
 }
 
-@media screen and (max-width: 350px){
-    .project__button button{
-        display: none;
+@media screen and (max-width: 400px) {
+    /* ABOUT US */
+    .aboutUs__logo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
+    .grid__logo{
+        margin-left: 30%;
+    }
+    /* PROJECT */
+    .project__par{
+        top: 30px;
+    }
+    .project__par p{
+        font-size: 4vw;
+    }
+    /* EVENT */
+    .events__body .title p{
+        width: 70%;
+    }
+    .events__body .title p{
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+    .footer__form input {
+        padding: 0;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+    .submit__form button{
+        padding: 5px;
+    }
+
 }

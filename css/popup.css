@@ -18,6 +18,11 @@
 
 #myParagraph button{
     padding: 2px 4px;
+    transition: all .5s;
+}
+
+#myParagraph button:hover{
+    background-color: #0f9d16;
 }
 
 

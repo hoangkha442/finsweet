@@ -61,4 +61,10 @@ button {
     border-radius: 4px;
     color: white;
     cursor: pointer;
+    transition: all .5s ;
+    border: none;
+}
+
+i{
+    cursor: pointer;
 }

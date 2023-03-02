@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>finsweet</title>
+    <title>Index</title>
     <!-- gg font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,23 +20,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Chart -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"
-      integrity="sha512-U3hGSfg6tQWADDQL2TUZwdVSVDxUt2HZ6IMEIskuBizSDzoe65K3ZwEybo0JOcEjZWtWY3OJzouhmlGop+/dBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <link rel="stylesheet" href="./css/popup.css" />
-    <!-- maincss -->
+    <link rel="stylesheet" href="./css/popup.css">
     <link rel="stylesheet" href="./css/main.css" />
-
-    <style>
-      .active {
-        display: none;
-      }
-    </style>
   </head>
   <body>
     <!-- HEADER -->
@@ -133,12 +118,24 @@
             <div class="line__bottom"></div>
           </div>
           <div class="aboutUs__logo">
-            <img src="./img/Logo.png" alt="" />
-            <img src="./img/Logo-1.png" alt="" />
-            <img src="./img/Logo-2.png" alt="" />
-            <img src="./img/Logo-3.png" alt="" />
-            <img src="./img/Logo-4.png" alt="" />
-            <img src="./img/Logo-5.png" alt="" />
+            <div class="grid__logo">
+              <img src="./img/Logo.png" alt="" />
+            </div>
+            <div class="grid__logo">
+              <img src="./img/Logo-1.png" alt="" />
+            </div>
+            <div class="grid__logo">
+              <img src="./img/Logo-2.png" alt="" />
+            </div>
+            <div class="grid__logo">
+              <img src="./img/Logo-3.png" alt="" />
+            </div>
+            <div class="grid__logo">
+              <img src="./img/Logo-4.png" alt="" />
+            </div>
+            <div class="grid__logo">
+              <img src="./img/Logo-5.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -320,10 +317,7 @@
           </div>
           <div class="stats__chart">
             <div class="chart">
-              <canvas id="doughnut" width="300" height="250"> </canvas>
-              <div class="text">
-                <p>{finsweet</p>
-              </div>
+              <img src="./img/cahrttt.png" alt="">
             </div>
           </div>
         </div>
@@ -340,8 +334,8 @@
               <h2>You can contribute to make the environment greener!</h2>
             </div>
             <div class="cta__btn">
-              <button>Join as a volunteer</button>
-              <button>Donate</button>
+              <a href="./popup.html"><button>Join as a volunteer</button></a>
+              <a href="./donation.html"><button>Donate</button></a>
             </div>
           </figcaption>
         </figure>
@@ -423,7 +417,7 @@
               </div>
 
               <div class="events__button">
-                <button><i class="fa fa-arrow-right"></i></button>
+                <a href="./event.html"><button><i class="fa fa-arrow-right"></i></button></a>
               </div>
             </div>
           </div>
@@ -442,7 +436,7 @@
               </div>
 
               <div class="events__button">
-                <button><i class="fa fa-arrow-right"></i></button>
+                <a href="./event.html"><button><i class="fa fa-arrow-right"></i></button></a>
               </div>
             </div>
           </div>
@@ -505,8 +499,7 @@
         <div class="card">
           <div class="card__header">
             <div class="button">
-              <button style="cursor: pointer;" id="highlightButton">X</button>
-
+              <button style="cursor: pointer" id="highlightButton">X</button>
             </div>
 
             <h2>Join as a volunteer</h2>
@@ -558,14 +551,6 @@
         myParagraph.classList.add("highlight");
       });
     </script>
-    <!-- main js -->
-    <script src="./js/main.js"></script>
-    <!-- Chart JS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"
-      integrity="sha512-U3hGSfg6tQWADDQL2TUZwdVSVDxUt2HZ6IMEIskuBizSDzoe65K3ZwEybo0JOcEjZWtWY3OJzouhmlGop+/dBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

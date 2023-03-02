@@ -276,13 +276,11 @@ footer{
         font-size: 5vw;
     }
 
-    /* CTA */
     .cta__overlay .cta__text{
         top: 30%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    
     /* BLOG */
     .blog__title {
         display: block;
@@ -341,6 +339,11 @@ footer{
     }
 
     /* donate */
+    .donate__left h2{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
     .donate__content {
         display: block;
     }
@@ -350,7 +353,7 @@ footer{
         margin-bottom: 20px;
     }
     .donate__text{
-        width: 90%;
+        width: 100%;
     }
 
     .donate__right {
@@ -379,10 +382,17 @@ footer{
     .footer__logo, .footer__contact, .footer__form {
         width: 100%;
     }
+    .footer__form p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px){
-
+    /* donate */
+    .donate__left h2{
+        font-size: 6vw;
+        line-height: 6vw;
+    }
     /* CTA */
     .cta__btn{
         display: flex;
@@ -392,12 +402,33 @@ footer{
         font-size: 2vw;
         padding: 8px 16px;
     }
+    /* FOOTER */
+    .footer__form p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 576px){
     /* DONATE */
     .donate__left{
         width: 100%;
+    }
+    .donate__left button{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    /* CTA */
+    .cta__overlay .cta__text h2 {
+        font-size: 4vw;
+    }
+    .cta__overlay .cta__btn button {
+        font-size: 2vw;
+        padding: 4px 8px;
+    }
+    /* FOOTER */
+    .footer__form p{
+        font-size: 7vw;
+        line-height: 7vw;
     }
 }
 

@@ -61,6 +61,11 @@ button {
     border-radius: 4px;
     color: white;
 }
+button:hover {
+    color: black;
+    background-color: white;
+
+}
 
 /******************************* HEADER *****************************/
 header{
@@ -105,6 +110,28 @@ header{
     color: white;
 }
 
+.nav__bar ul li{
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.nav__bar ul li::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0B0706;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ;
+}
+
+.nav__bar ul li:hover:after{
+    opacity: 1;
+}
+
 
 
 /******************************* BANNER *****************************/
@@ -142,6 +169,11 @@ header{
     padding: 16px 32px;
     background-color: white;
     color: black;
+    transition: all .5s;
+}
+.banner__body a:hover{
+    color: white;
+    background-color: black;
 }
 
 .banner__body .banner__video{
@@ -149,6 +181,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-left: 36px;
+    cursor: pointer;
 }
 
 .banner__video i{
@@ -205,6 +238,11 @@ header{
     background-color: #70C174;
     border: none;
     cursor: pointer;
+    transition: all .5s;
+}
+.aboutUs__text button:hover{
+    background-color: #059b0f;
+    color: white;
 }
 
 .aboutUs__left{
@@ -219,15 +257,15 @@ header{
 
 .aboutUs__right img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    position: absolute;
 }
 
 .aboutUs__right .right__icon{
     position: absolute;
-    width: 50%;
-    top: 45%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .right__icon i{
@@ -238,7 +276,12 @@ header{
     text-align: center;
     border-radius: 100rem;
     background-color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
 
+.right__icon i:hover{
+    background-color: rgb(189, 189, 189);
 }
 
 .aboutUs__title .line__bottom{
@@ -261,8 +304,9 @@ header{
 }
 
 .aboutUs__logo{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
 }
 
 /*********************************** WHAT WE DO*****************************/
@@ -347,12 +391,14 @@ header{
 }
 
 .project__content{
-    display: flex;
-    grid-template-columns: repeat(3, fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .project__item{
+    width: 100%;
+    height: 100%;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -408,6 +454,13 @@ header{
     color: black;
     background-color: white;
     border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.project__button button:hover{
+    color: white;
+    background-color: black;
 }
 
 /*********************************** STATS*****************************/
@@ -501,6 +554,11 @@ header{
     position: relative;
 }
 
+.chart img{
+    object-fit: cover;
+    width: 100%;
+}
+
 .chart p{
     color: white;
     font-size: 18px;
@@ -559,16 +617,29 @@ header{
     transform: translate(-50%,-50%);
 }
 
-.cta__overlay .cta__btn button:first-child{
+.cta__overlay .cta__btn a:first-child button{
     background-color: #70C174;
     border: none;
     margin-right: 20px;
+    cursor: pointer;
+    transition: all .5s;
 }
-.cta__overlay .cta__btn button:last-child{
+
+.cta__overlay .cta__btn a:first-child button:hover{
+    background-color: #059b0f;
+}
+
+.cta__overlay .cta__btn a:last-child button{
     font-weight: 500;
     color: black;
     background-color: #FFFFFF;
     border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+.cta__overlay .cta__btn a:last-child button:hover{
+    color: white;
+    background-color: black;
 }
 
 /***********************************BLOG*****************************/
@@ -690,7 +761,6 @@ header{
 .events__body .line{
     height: 2px;
     color: #1D2130;
-    width: 4vw;
     margin-left: 20px;
 }
 
@@ -713,13 +783,20 @@ header{
     padding: 0;
     border: none;
     background-color: white;
-    
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.events__button button:hover{
+    background-color: rgb(189, 189, 189);
+
 }
 
 .events__button button i{
     color: black;
     font-size: 18px;
 }
+
 
 /***********************************FOOTER*****************************/
 footer{
@@ -805,6 +882,12 @@ footer{
     color: black;
     border-radius: 0 8px 8px 0;
     background-color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.footer__form button:hover{
+    background-color: #EBF0F94D;
 }
 
 
@@ -834,16 +917,11 @@ footer{
     }
 }
 
-@media screen and (max-width: 1200px){
-    /* ABOUT US */
-    .aboutUs__right .right__icon {
-        top: 35%;
-        left: 45%;
-    }
+@media screen and (max-width: 1200px){  
 
     /* PROJECT */
     .project__content{
-        display: block;
+        grid-template-columns: repeat(1, 1fr);
     }
     .project__item {
         width: 50%;
@@ -894,6 +972,12 @@ footer{
     .title__abs.line__bottom{
         width: 90vw;
     }
+
+    .aboutUs__logo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
     
     
     /* WHAT WE DO */
@@ -913,11 +997,12 @@ footer{
     .project__text{
         width: 90%;
     }
+
+    /* CTA */
     .cta__overlay .cta__text h2{
         font-size: 5vw;
     }
 
-    /* CTA */
     .cta__overlay .cta__text{
         top: 30%;
         left: 50%;
@@ -1028,10 +1113,6 @@ footer{
         left: 50%;
     }
 
-    /* ABOUT US */
-    .aboutUs__logo {
-        display: block;
-    }
 
     /* PROJECT */
     .project__text h2{
@@ -1064,6 +1145,9 @@ footer{
     .blog__overlay{
         padding-bottom: 30px;
     }
+    .blog__overlay:last-child {
+        padding-bottom: 0;
+    }
 
     /* FOOTER */
     .footer__content{
@@ -1093,8 +1177,12 @@ footer{
 
 @media screen and (max-width: 768px){
     /* PROJECT */
-    .project__par p{
-        display: none;
+    .project__item{
+        width: 80%;
+    }
+    .project__par h3{
+        font-size: 7vw;
+        line-height: 7vw;
     }
     .project__text h2{
         line-height: 6vw;
@@ -1103,6 +1191,9 @@ footer{
     /* STATS */
     .stats__top, .stats__bottom{
         display: block;
+    }
+    .stats__chart {
+        width: 80%;
     }
 
     /* CTA */
@@ -1113,6 +1204,10 @@ footer{
     .cta__overlay .cta__btn button{
         font-size: 2vw;
         padding: 8px 16px;
+    }
+    /* FOOTER */
+    .footer__form p{
+        width: 100%;
     }
 }
 
@@ -1149,20 +1244,36 @@ footer{
         top: 50%;
         left: 50%;
     }
+    .aboutUs__logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+    }
+    .grid__logo{
+        margin-bottom: 10px;
+    }
 
     /* WWD */
     .text{
         padding: 0;
         width: 100%;
     }
-
-    /* PROJECT */
-    .project__par{
-        top: 30px;
+    .wwd__overlay{
+        width: 100%;
+    }
+    .wwd__right {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .wwd__text h2{
+        font-size: 8vw;
+        line-height: 8vw;
     }
 
+
     .project__item{
-        width: 70%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1175,5 +1286,102 @@ footer{
     .project__title{
         padding-bottom: 20px;
     }
+    .title p{
+        font-size: 3vw;
+    }
+    .title .line{
+        width: 15vw;
+    }
+
+    /* STATS */
+    .stats__title {
+        padding: 0 0 30px 0;
+    }
+    .stats__title h2 {
+
+        font-size: 9vw;
+        line-height: 9vw;
+
+    }
+    .chart{
+        margin-left: 0;
+    }
+    .stats__chart {
+        width: 100%;
+    }
+    .chart p {
+        font-size: 4vw;
+    }
+
+    /* CTA */
+    .cta__overlay .cta__text h2 {
+        font-size: 4vw;
+    }
+    .cta__overlay .cta__btn button {
+        font-size: 2vw;
+        padding: 4px 8px;
+    }
+
+    /* EVENT */
+    .events__date p:first-child{
+        font-size: 10vw;
+        line-height: 10vw;
+    }}
+    .events__date p:last-child {
+        font-size: 3vw;
+    }
+    .events__body .line{
+        width: 10vw;
+    }
+    .events__body h3{
+        font-size: 4.5vw;
+        line-height: 4.5vw;
+        margin-top: 5px;
+    }
+    .events__body .title p{
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+    .events__text {
+        padding: 15px;
+    }
+
+    .events__button button {
+        width: 36px;
+        height: 36px;
+    }
+    /* FOOTER */
+    .footer__form p{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
 }
+
+@media screen and (max-width: 400px) {
+        /* ABOUT US */
+        .aboutUs__logo{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid__logo{
+            margin-left: 30%;
+        }
+        /* PROJECT */
+        .project__par{
+            top: 30px;
+        }
+        .project__par p{
+            font-size: 4vw;
+        }
+        .events__body .title p{
+            width: 70%;
+        }
+        .footer__form input {
+            padding: 0;
+            padding-left: 5px;
+            font-size: 12px;
+        }
+        .submit__form button{
+            padding: 5px;
+        }
 }
