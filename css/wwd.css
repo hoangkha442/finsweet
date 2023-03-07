@@ -138,9 +138,22 @@ header{
     padding: 70px 0;
 }
 
-.project__text{
-    width: 65%;
-    padding-bottom: 50px;
+.project__title{
+    display: block !important;
+    text-align: center;
+}
+
+.project__title h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: #1D2130;
+}
+
+.project__title h2{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project__content{
@@ -606,6 +619,9 @@ footer{
     .events__item:first-child{
         margin-bottom: 20px;
     }
+    .project__title h2{
+        width: 80%;
+    }
     
 }
 
@@ -726,6 +742,9 @@ footer{
     .footer__logo, .footer__contact, .footer__form {
         width: 100%;
     }
+    .blog__item{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -742,6 +761,7 @@ footer{
     .project__item{
         width: 80%;
     }
+    /* .project__text {} */
     .project__par h3{
         font-size: 7vw;
         line-height: 7vw;
@@ -751,6 +771,9 @@ footer{
     }
 
     /* ENVIRONMENT */
+    .environment{
+        padding-top: 0;
+    }
     .environment__title h2{
         text-align: center;
         font-size: 7vw;
@@ -768,6 +791,11 @@ footer{
     }
     .footer__form p{
         width: 100%;
+    }
+    .project__title h2{
+        width: 100%;
+        font-size: 7vw;
+        line-height: 7vw;
     }
 }
 
@@ -829,8 +857,12 @@ footer{
         font-size: 4.5vw;
         line-height: 4.5vw;
     }
-    .events__body .title p{
-        font-size: 2vw;
+    .events__title p{
+        font-size: 5vw !important;
+    }
+
+    .blog__title p{
+        font-size: 5vw !important;
     }
     .events__text {
         padding: 15px;
@@ -846,9 +878,15 @@ footer{
         font-size: 7vw;
         line-height: 7vw;
     }
+    .overlay p:first-child{
+        font-size: 3vw !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
+    .wwd__right{
+        padding-top: 0;
+    }
     /* ABOUT US */
     .aboutUs__logo{
         display: grid;

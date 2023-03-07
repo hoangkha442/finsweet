@@ -1012,11 +1012,15 @@ footer{
     }
 
     /* BLOG */
-    .blog__title {
+    .blog__title{
         display: block;
     }
+
     .blog__title .line{
-        width: 90vw;
+        display: none;
+    }
+    .blog__title p{
+        border-bottom: 1px solid #1D213046;
     }
 
     /* EVENTS */
@@ -1025,7 +1029,10 @@ footer{
     }
 
     .events__title .line{
-        width: 90vw;
+        display: none;
+    }
+    .events__title p{
+        border-bottom: 1px solid #1d213046;
     }
 
     .events__content{
@@ -1230,7 +1237,7 @@ footer{
     }
 
     .banner__footer{
-        width: 100%;
+        width: 90%;
         display: inline-block;
         text-align: center;
     }
@@ -1296,7 +1303,7 @@ footer{
         font-size: 3vw;
     }
     .title .line{
-        width: 15vw;
+        display: none;
     }
 
     /* STATS */
@@ -1365,6 +1372,12 @@ footer{
     .cta__overlay{
         height: 97%;
     }
+}
+@media screen and (max-width: 430px){
+.cta__overlay .cta__btn a:last-child button{
+    margin-top: 2px;
+    padding: 9px;
+}
 }
 
 @media screen and (max-width: 400px) {

@@ -828,7 +828,9 @@ footer{
 
     .events__item:first-child{
         margin-bottom: 20px;
-    }
+    } 
+
+   
 
 }
 
@@ -1004,6 +1006,11 @@ footer{
     .journey {
         padding: 0 0 80px 0;
     }
+
+    .aboutUs__text h2{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -1057,10 +1064,38 @@ footer{
         font-size: 8vw;
         line-height: 8vw;
     }
+
+    .events__title p{
+        font-size: 6vw;
+        line-height: 6vw;
+        padding-bottom: 10px;
+    }
+    .blog__title p{
+        font-size: 6vw;
+        line-height: 6vw;
+        padding-bottom: 10px;
+    }
+    .award__title h2{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
 }
 @media screen and (max-width: 500px){
     .ourMission {
         padding: 161px 0 70px;
+    }
+    .ourMission__text h3{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    .cta__overlay .cta__btn a:first-child button{
+        font-size: 1.5vw;
+    }
+    .cta__btn{
+        flex: 1 1 auto;
+    }
+    .aboutUs__title {
+        padding: 10px 0;
     }
 }
 
@@ -1068,6 +1103,10 @@ footer{
     .ourMission {
         padding: 131px 0 70px;
 
+    }
+    .our__title h2{
+        font-size: 10vw;
+        line-height: 10vw;
     }
 }
 
